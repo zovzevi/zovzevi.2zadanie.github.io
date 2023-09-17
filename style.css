@@ -1,0 +1,128 @@
+.root {
+    background-color:#303030;
+    margin: 0;
+}
+header
+{
+    min-width: 100%;
+    background-color: #292929;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+ol
+{
+    color:#999999;
+}
+label
+{
+    color:#999999;
+}
+header h1
+{
+    color: #999999;
+    text-align: center;
+}
+
+
+.navnavnav
+{
+    color: #999999;
+}
+
+p{
+    color:#999999
+}
+
+a
+{
+    color:#E6E6E6
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 960px;}
+
+.navnav
+{
+    display: inline-block;
+    margin: 10px;
+}
+
+footer
+{
+    background-color: #292929;
+    margin: 0;
+    min-width: 100%;
+    position: relative;
+    top: 40px;
+
+    display: flex;
+
+
+    flex-direction: column;
+}
+
+#podval {
+    color: transparent;
+    background-color: transparent;
+    border: none;
+}
+
+.logo
+{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+
+main
+{
+    background-color: #252525;
+    max-width: 960px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+input, select, textarea
+{
+    color: #151515;
+    background-color: #606060;
+}
+
+textarea:focus, input:focus
+{
+    color:white; background-color: #151515;
+}
+table
+{
+    color:#999999
+}
+.stroka
+{
+    background-color: #151515
+
+}
+table
+{
+    border: 1px solid white;
+}
+caption
+{
+    border: 2px double white;
+}
+
+th {
+    border: 1px solid white;
+}
+
+td {
+    border: 1px solid white;
+}
+
+
+
