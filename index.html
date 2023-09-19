@@ -21,9 +21,8 @@
         <img src="kartinki/logo.jpg" alt="Логотип" class="logo">
         <h1>Человек-Паук</h1>
         <ul class="nav-wraper">
-            <li class="navnav"><a href="arara.html" class="navnavnav">Росомаха</a></li>
-            <li class="navnav"><a href="test.html" class="navnavnav">Чебурашка</a></li>
-            <li class="navnav"><a href="./about/aBoUt.html" class="navnavnav">Илон Маск</a></li>
+            <li class="navnav"><a id="table" class="navnavnav">Таблица</a></li>
+            <li class="navnav"><a id="form" class="navnavnav">Форма</a></li>
         </ul>
     </nav>
 
@@ -49,11 +48,9 @@
     <li>Ссылка в прямоугольной и круглой области <img src="kartinki/пёс.jpg" alt="пёснос" usemap="#boop">
     <map name="boop">
         <area shape="circle" coords="100,220,73" href="https://www.youtube.com/watch?v=AoehgPuzf5U" target="_blank" alt="нос">
+        <area shape="rect" coords="0,0,50,50" href="https://www.youtube.com/watch?v=GMqTRd0iLSs" target="_blank" alt="TACHILA">
     </map>
-    <img src="kartinki/кчау.jpg" alt="кчау" usemap="#car" width="250" height="250">
-    <map name="car">
-        <area shape="rect" coords="72,82,302,268" href="https://www.youtube.com/watch?v=GMqTRd0iLSs" target="_blank" alt="TACHILA">
-    </map></li>
+   
     <li><a href="#!">Ссылка с пустым href</a></li>
     <li><a>Ссылка без href</a></li>
     <li>Ссылки в пронумерованном списке<ol>
@@ -65,7 +62,7 @@
     <li><a href="arara.html" rel="noindex">Ссылка запрещенная для индексации поисковиками</a></li>
     <li><a href="ftp://demo:demo@http://demo.wftpserver.com/main.html/download/Spring.jpg">ссылка на файл с авторизацией</a></li>
    </ol>
-
+<a id="table"></a>
     <table>
         <caption>Таблица</caption>
         <thead>
@@ -122,31 +119,31 @@
         </tfoot>
     </table>
 
-
+<a id="form"></a>
 <form method="post" action="/" class="forms">
     <label>
         <br />
-        <input placeholder="ФИО" />
+        <input placeholder="ФИО" required/>
     </label><br />
     <label>
-        <input type="tel" placeholder="Телефон" />
+        <input type="tel" placeholder="Телефон"  required/>
     </label><br />
     <label>
-        <input type="email" placeholder="e-mail" />
+        <input type="email" placeholder="e-mail" required />
     </label><br />
     <label>
         Дата рождения <br/>
-        <input type="date" />
+        <input type="date" required />
     </label><br />
     <label>
-        <input name=sex type="radio" value="male" />
+        <input name=sex type="radio" value="male" required />
         Мужской</label>
     <label>
-        <input name=sex type="radio" value="female" />
+        <input name=sex type="radio" value="female" required/>
         Женский</label> <br />
     <label>
         <br />
-        <select>
+        <select required>
             <option disabled>Любимый язык программирования</option>
             <option value="Pascal">Pascal</option>
             <option value="C" >C</option>
@@ -163,13 +160,13 @@
         </select>
     </label><br />
     <label>
-        <textarea placeholder="Биография"></textarea>
+        <textarea placeholder="Биография" required></textarea>
     </label><br />
     <label>
         С контрактом ознакомился
-        <input type="checkbox">
+        <input type="checkbox" required>
     </label><br />
-    <input type="submit" value="Отправить" />
+    <input type="submit" value="Отправить"/>
 </form>
 </main>
 
